@@ -1,0 +1,8 @@
+{
+  "name": "cadet",
+  "integrations": {
+    "capacitor": {},
+    "cordova": {}
+  },
+  "type": "angular"
+}

@@ -1,0 +1,26 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Registros
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-datetime-button datetime="datetime"></ion-datetime-button>
+
+<ion-modal [keepContentsMounted]="true">
+  <ng-template>
+    <ion-datetime id="datetime"></ion-datetime>
+  </ng-template>
+</ion-modal>
+<ion-item *ngFor="let item of items; let i = index">
+  <ion-badge color="success" slot="start">{{ item.data }}</ion-badge>
+  <ion-label>{{ item.datetime }}</ion-label>
+  <ion-icon name="information-circle" slot="end"></ion-icon>
+</ion-item>
+
+</ion-content>
+
+
+

@@ -1,0 +1,25 @@
+.foo {
+    animation: rotation 2s infinite linear;
+    
+    &:before {
+     // content: "sync-outline";
+      font-size: 16px;
+      color: blue;
+    }
+  }
+  
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+
+  ion-item {
+    --highlight-height: 2px;
+    --highlight-color-focused: #43e7f3;
+    --highlight-color-valid: #6f58d8;
+    --highlight-color-invalid: #ff46be;
+  }
